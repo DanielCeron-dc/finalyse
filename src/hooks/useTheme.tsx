@@ -40,8 +40,8 @@ export const useTheme = (): [themeType, updateTheme]=> {
 
     useEffect(() => {
         let theme = localStorage.getItem('theme-color');
-        if (theme == null) {
-            localStorage.setItem("theme-color", 'light');
+        if (theme) {
+            setTheme(theme as 'light' | 'black' | 'dark');
         }
         theme && changeTheme(theme as 'light' | 'black' | 'dark');
     }, []);
