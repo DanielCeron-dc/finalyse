@@ -1,0 +1,76 @@
+.SideBar {
+    position: relative;
+    width: 17rem;
+    height: 95vh;
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.5);
+    background: var(--color1-dark);
+    position: fixed;
+    top: 2.5vh;
+    right: -18rem;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 3rem;
+    margin: 1rem 0 0 0;
+    background: var(--color1-dark);
+    border-radius: 1rem;
+}
+
+.colorAction {
+    width: 100%;
+    height: 2rem;
+    margin: 0 0.25rem;
+    background: var(--color1);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.colorSelected {
+    background-color: var(--color1-dark);
+}
+
+.colorAction:hover {
+    background: var(--color1-dark);
+    cursor: pointer;
+}
+
+
+.SideBar section {
+    width: 95%;
+    margin: 0.5rem;
+    background-color: var(--color1);
+    border-radius: 1rem;
+}
+
+.SideBar__header {
+    background: var(--color3);
+    color: var(--color3);
+}
+
+.SideBar.open {
+    transform: translateX(-19rem);
+    transition: all 0.3s ease-in-out;
+}
