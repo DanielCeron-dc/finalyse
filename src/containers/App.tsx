@@ -1,20 +1,14 @@
-import { useState } from 'react';
-
+import SideMenu from 'components/SideMenu/SideMenu';
 import './App.css';
 
-import ExpandButton from '../components/ExpandButton/ExpandButton';
-import SideBar from 'components/SideBar/SideBar';
+import Content from './Content/Content';
 
-function App() {
-
-  
-  const [isOpen, setIsOpen] = useState(false);
-  
+function App() { 
 
   return (
     <div className="App">
-      <ExpandButton onExpand = {() => setIsOpen(e => !e)}/>
-      <SideBar open = {isOpen} />
+      <SideMenu/>
+      <Content />
     </div>
   );
 }
