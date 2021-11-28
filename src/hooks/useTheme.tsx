@@ -8,7 +8,7 @@ const changeTheme = (type: 'light' | 'black' | 'dark') => {
     switch (type) {
         case 'light':
             changeCssVariable('--color1', 'white');
-            changeCssVariable('--color1-dark', '#f6fafa');
+            changeCssVariable('--color1-dark', '#EDECEF');
             changeCssVariable('--color-text', 'black');
             break;
         case 'black':

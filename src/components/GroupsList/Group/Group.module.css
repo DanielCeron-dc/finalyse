@@ -1,0 +1,28 @@
+.Group {
+    max-width: 100%;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.line {
+    width: 100%;
+    min-height: 0.1rem;
+    background: var(--color-text);
+    transition: all 0.2s ease-in-out;
+}
+
+
+.Group p {
+    font-size: 1.2rem;
+}
+
+.Group:hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+

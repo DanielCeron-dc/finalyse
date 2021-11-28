@@ -1,0 +1,15 @@
+.MainPanel {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+    border-radius:2rem; 
+    background-color: var(--color1);
+    padding: 0.5rem;
+}
+
+.MainPanel h1 {
+    align-self: center;
+    margin: 1rem;
+}

@@ -55,3 +55,7 @@ textarea {
 *.svg {
   fill: var(--color-text);
 }
+
+button {
+  cursor: pointer;
+}

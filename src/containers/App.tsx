@@ -1,6 +1,6 @@
-import SideMenu from 'components/SideMenu/SideMenu';
 import './App.css';
 
+import SideMenu from 'components/SideMenu/SideMenu';
 import Content from './Content/Content';
 
 function App() { 
